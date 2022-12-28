@@ -1,5 +1,22 @@
+/* * {
+  
+} */
+
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container-utama {
+  overflow-x: hidden;
+}
+
+.clear {
+  clear: both;
 }
 
 /* Home-Nav Style */
@@ -16,7 +33,7 @@ html {
   display: flex;
   justify-content: space-between;
   padding: 15px 20px;
-  background: linear-gradient(rgba(255, 102, 0, 0.4), transparent);
+  background: linear-gradient(rgba(255, 102, 0, 0.2), transparent);
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -52,7 +69,6 @@ html {
 .navigasi-utama a:hover {
   color: rgb(255, 102, 0);
   transition: 0.7s;
-  /* text-decoration: underline rgba(176, 175, 175, 0.786) 2px; */
 }
 /* Nav Style End */
 
@@ -60,8 +76,8 @@ html {
 .home-page {
   display: flex;
   flex-direction: column;
-  padding-top: 220px;
-  padding-bottom: 220px;
+  padding-top: 290px;
+  padding-bottom: 290px;
   margin-left: 50%;
   opacity: 0.5;
   transition: 1.5s;
@@ -122,7 +138,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  padding: 130px 80px;
+  padding: 200px 80px;
 }
 
 .about-pic img {
@@ -133,6 +149,13 @@ html {
   margin-right: 70px;
   margin-top: 50px;
   box-shadow: 0 0 20px black;
+  transition: 0.5s;
+}
+
+.about-pic img:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 .text-about h1 {
@@ -209,7 +232,7 @@ html {
 /* Education Style */
 .education-page {
   background-color: #353535;
-  padding: 100px 80px;
+  padding: 200px 80px;
   box-shadow: 0 0 5px black;
 }
 
@@ -258,6 +281,45 @@ html {
   margin-bottom: 15px;
 }
 
+.smp-content img {
+  border-radius: 20px;
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.sma-content img {
+  border-radius: 20px;
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.sd-content:hover {
+  transform: scale(1.2);
+  opacity: 0.7;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.smp-content .card-education:hover {
+  transform: scale(1.2);
+  opacity: 0.7;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.sma-content:hover {
+  transform: scale(1.2);
+  opacity: 0.7;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.kuliah-content:hover {
+  transform: scale(1.2);
+  opacity: 0.7;
+  transition: 0.5s;
+  cursor: pointer;
+}
 /* Education Style End */
 
 /* Contact Style */
@@ -267,7 +329,7 @@ html {
   display: flex;
   justify-content: space-around;
   align-content: center;
-  padding: 130px 80px;
+  padding: 200px 40px;
 }
 
 .contact-page h1 {
@@ -303,6 +365,7 @@ html {
 
 .right-contact input {
   background-color: #353535;
+  outline: none;
   border: none;
   padding: 10px;
   margin-bottom: 20px;
@@ -313,6 +376,7 @@ html {
 
 .right-contact textarea {
   background-color: #353535;
+  outline: none;
   border: none;
   padding: 10px;
   margin-bottom: 10px;
@@ -348,6 +412,7 @@ html {
 
 .medsos-contact {
   margin-bottom: 30px;
+  font-family: arial;
 }
 
 .text-contact {
@@ -358,15 +423,126 @@ html {
 .fa-instagram {
   color: #c13584;
   margin-bottom: 5px;
+  transform: 0.5;
 }
 
 .fa-facebook {
   color: #3b5998;
   margin-bottom: 5px;
+  transform: 0.5;
 }
 
 .fa-twitter {
   color: #00acee;
   margin-bottom: 5px;
+  transform: 0.5;
+}
+
+.fa-instagram:hover {
+  transform: scale(1.1);
+  transform: 0.5;
+}
+
+.fa-facebook:hover {
+  transform: scale(1.1);
+  transform: 0.5;
+}
+
+.fa-twitter:hover {
+  transform: scale(1.1);
+  transform: 0.5;
 }
 /* Contact Style End */
+
+/* Skill Style */
+.skill-page {
+  background-color: #353535;
+  padding: 200px 80px;
+  box-shadow: 0 0 5px black;
+}
+
+.skill-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.skill-card {
+  background-color: #262622;
+  border-radius: 10px;
+  width: 200px;
+  overflow: hidden;
+  padding: 20px;
+  box-shadow: 0 0 5px black;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-page h1 {
+  color: grey;
+  font-family: arial;
+  font-size: 80px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: white;
+  text-shadow: 0 0 10px black;
+  /* text-decoration: underline rgb(255, 102, 0) 3px; */
+  text-align: center;
+}
+
+.skill-page h1 span {
+  color: rgb(255, 102, 0);
+  /* text-decoration: underline white 3px; */
+}
+
+.skill-card i {
+  color: rgb(255, 102, 0);
+  font-size: 60px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.skill-card h1 {
+  color: grey;
+  font-size: 20px;
+  font-family: arial;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.skill-satu {
+  /* margin-right: 20px; */
+}
+
+.skill-dua {
+  /* margin-right: 20px; */
+}
+
+/* Skill Style End */
+
+/* Nav Footer Style */
+.footer-nav {
+  display: none;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: grey;
+  bottom: 0;
+  width: 92%;
+}
+
+.footer-nav i {
+  color: rgb(255, 102, 0);
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.footer-nav i:hover {
+  transform: scale(1.1);
+  color: rgb(255, 102, 0);
+  transition: 0.5s;
+}
+/* Nav Footer Style End */
