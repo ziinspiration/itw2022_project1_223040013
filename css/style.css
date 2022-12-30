@@ -293,33 +293,29 @@ body {
   margin-bottom: 15px;
 }
 
-.sd-content:hover {
-  transform: scale(1.2);
+/* .sd-content:hover {
   opacity: 0.7;
   transition: 0.5s;
   cursor: pointer;
 }
 
-.smp-content .card-education:hover {
-  transform: scale(1.2);
+.smp-content:hover {
   opacity: 0.7;
   transition: 0.5s;
   cursor: pointer;
 }
 
 .sma-content:hover {
-  transform: scale(1.2);
   opacity: 0.7;
   transition: 0.5s;
   cursor: pointer;
 }
 
 .kuliah-content:hover {
-  transform: scale(1.2);
   opacity: 0.7;
   transition: 0.5s;
   cursor: pointer;
-}
+} */
 /* Education Style End */
 
 /* Contact Style */
@@ -441,17 +437,21 @@ body {
 .fa-instagram:hover {
   transform: scale(1.1);
   transform: 0.5;
+  opacity: 0.5;
 }
 
 .fa-facebook:hover {
   transform: scale(1.1);
   transform: 0.5;
+  opacity: 0.5;
 }
 
 .fa-twitter:hover {
   transform: scale(1.1);
   transform: 0.5;
+  opacity: 0.5;
 }
+
 /* Contact Style End */
 
 /* Skill Style */
@@ -460,8 +460,7 @@ body {
   padding: 200px 80px;
   box-shadow: 0 0 5px black;
 }
-
-.skill-content {
+gu .skill-content {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
@@ -512,14 +511,6 @@ body {
   margin-bottom: 35px;
 }
 
-.skill-satu {
-  /* margin-right: 20px; */
-}
-
-.skill-dua {
-  /* margin-right: 20px; */
-}
-
 /* Skill Style End */
 
 /* Nav Footer Style */
@@ -527,9 +518,11 @@ body {
   display: none;
   justify-content: space-around;
   padding: 20px;
-  background-color: grey;
+  background-color: rgb(75, 74, 74);
+  box-shadow: 0 0 2px black;
   bottom: 0;
-  width: 92%;
+  width: 91%;
+  /* border-radius: 50px; */
 }
 
 .footer-nav i {
@@ -538,11 +531,15 @@ body {
   padding: 10px;
   border-radius: 10px;
   transition: 0.5s;
+  width: 20px;
+  text-align: center;
 }
 
 .footer-nav i:hover {
   transform: scale(1.1);
   color: rgb(255, 102, 0);
+  box-shadow: 0 0 10px orangered;
   transition: 0.5s;
+  opacity: 0.8;
 }
 /* Nav Footer Style End */

@@ -68,6 +68,10 @@
 @media screen and (max-width: 500px) {
   /* navigasi */
 
+  .nav-home {
+    background-position-x: 35%;
+  }
+
   .navigasi-utama {
     width: 92%;
   }
@@ -128,6 +132,11 @@
     margin: auto;
   }
 
+  h1.head-skill {
+    font-size: 60px;
+    margin-bottom: 90px;
+  }
+
   .skill-satu {
     margin-bottom: 20px;
     margin-right: 0;
@@ -156,5 +165,7 @@
   .footer-nav {
     display: flex;
     position: fixed;
+    margin: auto;
+    align-content: center;
   }
 }
