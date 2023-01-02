@@ -129,6 +129,9 @@
   .skill-content {
     display: flex;
     flex-direction: column;
+  }
+
+  .skill-card {
     margin: auto;
   }
 
