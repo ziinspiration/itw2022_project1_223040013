@@ -460,7 +460,8 @@ body {
   padding: 200px 80px;
   box-shadow: 0 0 5px black;
 }
-gu .skill-content {
+
+.skill-content {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
@@ -487,13 +488,11 @@ gu .skill-content {
   margin-bottom: 30px;
   color: white;
   text-shadow: 0 0 10px black;
-  /* text-decoration: underline rgb(255, 102, 0) 3px; */
   text-align: center;
 }
 
 .skill-page h1 span {
   color: rgb(255, 102, 0);
-  /* text-decoration: underline white 3px; */
 }
 
 .skill-card i {
@@ -522,7 +521,6 @@ gu .skill-content {
   box-shadow: 0 0 2px black;
   bottom: 0;
   width: 91%;
-  /* border-radius: 50px; */
 }
 
 .footer-nav i {
